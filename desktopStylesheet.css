@@ -205,10 +205,12 @@ textarea {
 }
 /*the whole form*/
 .form {
+    width: 90%;
+    display: block;
+    margin-left: 5%;
     display: block;
     text-align: center;
     border:3px solid #2b2d42;
-    width: 70%;
     padding: 20px;
     border-radius: 10px;
     background-color: #2b2d42;
@@ -278,10 +280,11 @@ input[type="submit"] {
     }
 }
 
+/*general formatting for paragraphs*/
 @media screen and (max-width: 600px) {
     p {
         width:100%;
-        padding: 10%;
+        padding: 5%;
         margin: 0;
     }
 }
