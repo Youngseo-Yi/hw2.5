@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Taekwondo Tutoring: Contact</title>
+        <link rel="stylesheet" href="desktopStylesheet.css">
+        <style>
+            * {
+                box-sizing:border-box;
+            }
+            input[type=submit]:hover {
+                 background-color:#ef233c;
+            }
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                    width: 100%;
+                    margin-top: 0;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
+            <div class="tagline">Online Taekwondo Tutoring</div>
+            <a href = "mailto: taekwontutoryy@gmail.com">
+                taekwontutoryy@gmail.com 
+            </a>
+            <div class="phone">Phone: (781)698-7351</div>
+        </div>
+
+            
+        <div class="navigation">
+            <a href="./index.html">Home</a>
+            <div class="dropdown">
+                <div class="dropbtn">About</div>
+                <div class="dropdown-content">
+                    <a href="./aboutclass.html">About the Class</a>
+                    <a href="./aboutinstructor.html">About the Instructor</a>
+                </div>
+            </div>
+            <a class="active" href="./contact.html">Contact Us</a>
+            <a href="./resources.html">Resources</a>
+        </div>
+
+
+        <div class="banner">
+            <h1>Contact Us</h1>
+        </div>
+        Please fill out the form below to contact us.
+        <form>
+            <form method='get' action='second.html'>
+            <label>Name: </label><input type="text" />
+            <br />
+            <label>Email: </label><input type="text" />
+            <br />
+            <label>Phone: </label><input type="text" />
+            <br />
+            <label>Belt Rank: </label>
+            <select size='1'>
+                <option value="n">none</option>
+                <option value="green">white-green belt</option>
+                <option value="red">blue-red belt</option>
+                <option value="black">black belt</option>
+                <option value ="other">other</option>
+            </select>
+
+            <br/>
+            <label>What are your goals in Taekwondo?</label>
+            <br/>
+            <textarea>Type your answer here.</textarea>
+
+            <input type='submit'>
+        </form>
+    </body>
+</html>

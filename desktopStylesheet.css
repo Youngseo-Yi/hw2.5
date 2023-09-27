@@ -1,0 +1,215 @@
+/*
+Youngseo Yi
+9/26/23
+CS20-Web Programming
+HW2: Build a Business Website
+Content: external style sheet for the website
+*/
+
+body {
+    margin: 0;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+.header{
+    margin-right:0;
+    display: block;
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    background: #2b2d42;
+    text-decoration: none;
+}
+
+.tagline {
+    text-align: left;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.header a {
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: right;
+    width:100%;
+}
+.phone{
+    font-size: 20px;
+    text-align: right;
+    width:100%;
+    color: #ffffff;
+}
+
+/*banner for heading*/
+.banner {
+    width: 100%;
+    display: block;
+    background: #d80032;
+    padding: 30px;
+    font-size: 20px;
+    text-align: left;
+    color: #ffffff;
+    margin: 0px;
+}
+
+
+
+p {
+    text-align: center;
+    max-width: 600px;
+}
+
+.navigation {
+    overflow: hidden;
+    margin:0;
+    background-color: #8d99ae;
+    width: 100%;
+}
+
+.navigation a {
+    float: left;
+    color: #2b2d42;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 25%;
+}
+
+.navigation .active {
+    background-color: #d80032;
+}
+
+
+.navigation a:hover  {
+    background-color: #ef233c;
+    color:#2b2d42;
+}
+
+.dropdown:hover  {
+    background-color: #ef233c;
+    color:#2b2d42;
+}
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    width: 25%;
+}
+.dropdown a{
+    float: left;
+    overflow: hidden;
+    width: 25%;
+    background-color: inherit;
+    text-align: center;
+    margin: 0;
+}
+  
+.dropdown .dropbtn {
+    font-size: 16px;
+    border:none;
+    outline: none;
+    color: #2b2d42;
+    padding: 14px 16px;
+    margin: 0;
+    text-align: center;
+}
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: #8d99ae;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    width: 100%;
+    color: #2b2d42;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ef233c;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /*for mobile version*/
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    .column {
+        width:100%;
+    }
+  }
+
+/*Table Properties*/
+table {
+    width: 60%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th, td {
+    width: 20%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/*700, 800 px/*
+
+/*for About the Instructor*/
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    float:left;
+  }
+  .left {
+    width: 50%;
+    padding: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .right {
+    width: 50%;
+    padding: 20px;
+    align-items: center;
+  }
+
+  /*for Contact*/
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
