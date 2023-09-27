@@ -68,7 +68,7 @@ p {
     margin: 0px;
 }
 /*the navbar itself*/
-.navigation {
+.navigation-desktop {
     display: flex;
     overflow: hidden;
     margin:0;
@@ -76,7 +76,7 @@ p {
     width: 100%;
 }
 /*each element, or link, in the navbar*/
-.navigation a {
+.navigation-desktop a {
     float: left;
     color: #2b2d42;
     text-align: center;
@@ -85,11 +85,11 @@ p {
     width: 25%;
 }
 /*change color of active tab*/
-.navigation .active {
+.navigation-desktop .active {
     background-color: #d80032;
 }
 /*change color when different nav link is hovered*/
-.navigation a:hover  {
+.navigation-desktop a:hover  {
     background-color: #ef233c;
     color:#2b2d42;
 }
@@ -149,148 +149,6 @@ p {
     display: block;
 }
 
-
-/*for mobile version*/
-
-/* Hide checkbox */
-
-.menu-toggle-checkbox {
-    display:none;
-}
-
-.menu-toggle-label {
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 600px) {
-
-    
-    .bar {
-        width: 25px;
-        height: 3px;
-        background-color: #d80032;
-        margin: 3px 0;
-        transition: transform 0.3 ease-in-out;
-    }
-    
-    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(1) {
-        transform: rotate(-45deg) translate(-2px, 1px);
-    }
-    
-    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(3) {
-        transform: rotate(45deg) translate(-2px, -1px);
-    }
-    
-    .navigation {
-        display: none;
-        flex-direction: column;
-            background-color: #d80032;
-            position:absolute;
-            top: 60px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 1;
-    }
-    
-    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav-links {
-        display: flex;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 1;
-    }
-}
-
-
-@media screen and (max-width: 100px) {
-    .navigation {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust this value as needed */
-        right: 20px; /* Adjust this value as needed */
-        background-color: #333;
-        padding: 10px;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .mobile-icon {
-        display: block;
-        cursor: pointer;
-    }
-
-    .mobile-icon span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: #d80032;
-        margin: 5px 0;
-    }
-     
-
-    .dropdown:hover .dropdown-content {
-        display: none;
-    }
-
-    .dropdown.active .dropdown-content {
-        display: flex;
-    }
-
-    .navbar a {
-        float: none;
-        display: block;
-        width: 100%;
-        text-align: left;
-      }
-
- }
-
-/*responsiveness for text and image in About the Instructor page*/
-@media screen and (max-width: 600px) {
-    body {
-        font-size:16px;
-    }
-    .row {
-        flex-direction:column;
-    }
-    .left {
-        order: 2;
-    }
-    .right {
-        order: 1;
-        margin-left: 25%;
-        margin-right: 25%;
-        padding: 20px;
-    }
-  }
-/*responsiveness for text and image in About the Instructor page*/
-@media screen and (max-width: 600px) {
-    .phone {
-        text-align: left;
-    }
-    .header a {
-        text-align: left;
-    }
-}
 /*Table Properties in Resources Page*/
 table {
     margin-left: auto;
@@ -370,4 +228,66 @@ textarea {
 input[type="submit"] {
     width: 30%;
     height: 50px;
+}
+
+/*mobile navbar is not shown by default*/
+.navigation-mobile {
+    display: none;
+
+}
+
+/*responsiveness for navigation bar*/
+@media screen and (max-width: 600px) {
+    .navigation-desktop {
+        display: none;
+    }
+    .navigation-mobile {
+        display: inline-block;
+        background-color: #8d99ae;
+        margin:0;
+        padding:0;
+    }
+    .navigation-mobile a {
+        float: left;
+        color: #2b2d42;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100%;
+        margin:0;
+    }
+    /*change color of active tab*/
+    .navigation-mobile .active {
+        background-color: #d80032;
+    }
+}
+
+/*responsiveness for text and image in About the Instructor page*/
+@media screen and (max-width: 600px) {
+    body {
+        font-size:16px;
+    }
+    .row {
+        flex-direction:column;
+    }
+    .left {
+        order: 2;
+    }
+    .right {
+        order: 1;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
+    }
+}
+/*responsiveness for header*/
+@media screen and (max-width: 600px) {
+    .phone {
+        text-align: left;
+        font-size: 16px;
+    }
+    .header a {
+        text-align: left;
+        font-size: 16px;
+    }
 }
