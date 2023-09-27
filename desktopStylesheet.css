@@ -157,6 +157,9 @@ p {
 
   /*for mobile version*/
   @media screen and (max-width: 500px) {
+     body {
+         font-size: 16px;
+     }
     .navbar a {
       float: none;
       display: block;
