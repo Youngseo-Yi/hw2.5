@@ -15,6 +15,15 @@ body {
 * {
     box-sizing: inherit;
 }
+
+p {
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 600px;
+    font-size: 18px;
+}
+
 .header{
     margin-right:0;
     display: block;
@@ -57,12 +66,6 @@ body {
     margin: 0px;
 }
 
-
-
-p {
-    text-align: center;
-    max-width: 600px;
-}
 
 .navigation {
     overflow: hidden;
@@ -160,17 +163,35 @@ p {
       width: 100%;
       text-align: left;
     }
-    .column {
-        width:100%;
+    .row {
+        flex-direction:column;
+    }
+    .left {
+        order: 2;
+    }
+    .right {
+        order: 1;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding: 20px;
     }
   }
 
 /*Table Properties*/
 table {
+    margin-left: auto;
+    margin-right: auto;
     width: 60%;
+    text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url("taegeuk.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+
 }
 
 th, td {
@@ -188,17 +209,17 @@ th, td {
   
   .column {
     float:left;
+    margin-top: 20px;
   }
   .left {
-    width: 50%;
-    padding: 40px;
+    width: 70%;
     text-align: center;
     text-decoration: none;
   }
   
   .right {
     width: 50%;
-    padding: 20px;
+    display: inline-block;
     align-items: center;
   }
 
@@ -213,3 +234,39 @@ th, td {
     background-color: #f8f8f8;
     resize: none;
   }
+
+  /*for Form in Contact Us*/
+
+.form {
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    max-width: 600px;
+    text-align: center;
+    border:3px solid #2b2d42;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #2b2d42;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form label  {
+    display: block;
+    margin: 10px;
+    color:#ffffff;
+}
+
+input[type="submit"] {
+    width: 30%;
+    height: 50px;
+}
+
+.bgimage {
+    background-image: url("bgflag.png");
+    opacity: 50%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+}
