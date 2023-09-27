@@ -69,6 +69,7 @@ p {
 
 
 .navigation {
+    display: flex;
     overflow: hidden;
     margin:0;
     background-color: #8d99ae;
@@ -156,8 +157,115 @@ p {
     display: block;
   }
 
+
   /*for mobile version*/
-  @media screen and (max-width: 500px) {
+
+/* Hide checkbox */
+
+.menu-toggle-checkbox {
+    display:none;
+}
+
+.menu-toggle-label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #d80032;
+        margin: 3px 0;
+        transition: transform 0.3 ease-in-out;
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-2px, 1px);
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    
+    .navigation {
+        display: none;
+        flex-direction: column;
+            background-color: #d80032;
+            position:absolute;
+            top: 60px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 1;
+    }
+    
+    .menu-toggle-checkbox:checked + .menu-toggle-label + .nav-links {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+    }
+}
+
+
+@media screen and (max-width: 100px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust this value as needed */
+        right: 20px; /* Adjust this value as needed */
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .mobile-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-icon span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #d80032;
+        margin: 5px 0;
+    }
+     
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+    .dropdown.active .dropdown-content {
+        display: flex;
+    }
+
+ }
+
+@media screen and (max-width: 600px) {
     body {
         font-size:16px;
     }
