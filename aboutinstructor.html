@@ -1,70 +1,78 @@
+<!--
+Youngseo Yi
+9/27/23
+CS20-Web Programming
+HW2: Build a Business Website
+Content: About the Instructor page (with the picture)
+-->
 <!DOCTYPE html>
-
 <html>
+    <head>
+        <title>Taekwondo Tutoring: About the Instructor</title>
+        <link rel="stylesheet" href="desktopStylesheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<head>
-    <title>Taekwondo Tutoring: About the Instructor</title>
-    <link rel="stylesheet" href="desktopStylesheet.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body>
+        <!--header-->
+        <div class="header">
+            <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
+            <div class="tagline">Taekwondo Tutoring</div>
+            <a href = "mailto: taekwontutoryy@gmail.com">
+                taekwontutoryy@gmail.com 
+            </a>
+            <div class="phone">Phone: (781)698-7351</div>
+        </div>
 
+        <!--navigation bar-->
+        <div class="navigation">
+            <a href="./index.html">Home</a>
+            <div class="dropdown active">
+                <div class="dropbtn">About</div>
+                <div class="dropdown-content">
+                    <a href="./aboutclass.html">About the Class</a>
+                    <a class="active" href="./aboutinstructor.html">About the 
+                        Instructor</a>
+                </div>
+            </div>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./resources.html">Resources</a>
+        </div>
 
-</head>
+        <!--banner-->
+        <div class="banner">
+            <h1>About the Instructor</h1>
+        </div>
 
-<body>
-    <div class="header">
-        <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
-        <div class="tagline">Taekwondo Tutoring</div>
-        <a href = "mailto: taekwontutoryy@gmail.com">
-            taekwontutoryy@gmail.com 
-        </a>
-        <div class="phone">Phone: (781)698-7351</div>
-    </div>
+        <!--content-->
+        <div class="row">
+            <div class = "column">
+                <p> Youngseo Yi is a third-degree black belt who currently 
+                    trains at CW Taekwondo in Boston, MA. Youngseo started her
+                    Taekwondo journey at Musa Taekwondo in Bedford, MA 
+                    (formerly known as Youn&apos;s Taekwondo) before joining CW
+                    in 2017. She currently competes at a regional and national
+                    level with multiple accolades, including bronze in the 2023
+                    USATKD National Championships sparring -67kg division. 
+                </p>
+                <p>
+                    Youngseo is primarily trained in the World Taekwondo branch,
+                    with multiple years of experience in poomsae and sparring. 
+                    She currently teaches youth classes at CW Taekwondo for 
+                    ages 5-15, and has experience in teaching youth and adult 
+                    Taekwondo classes.
+                
+                </p>
+            </div>
 
-        
-    <div class="navigation">
-        <a href="./index.html">Home</a>
-        <div class="dropdown active">
-            <div class="dropbtn">About</div>
-            <div class="dropdown-content">
-                <a href="./aboutclass.html">About the Class</a>
-                <a class="active" href="./aboutinstructor.html">About the 
-                    Instructor</a>
+            <!--picture-->
+            <div class = "column">
+                <img src="croppedcompsidekick.jpg" alt="The Instructor Kicking a
+                Sidekick" width=90% style="vertical-align: middle;">
             </div>
         </div>
-        <a href="./contact.html">Contact Us</a>
-        <a href="./resources.html">Resources</a>
-    </div>
-
-
-    <div class="banner">
-        <h1>About the Instructor</h1>
-    </div>
-    <div class="row">
-        <div class = "column">
-            <p> Youngseo Yi is a third-degree black belt who currently trains
-                at CW Taekwondo in Boston, MA. Youngseo started her Taekwondo
-                journey at Musa Taekwondo in Bedford, MA (formerly known as 
-                Youn&apos;s Taekwondo) before joining CW in 2017. She currently 
-                competes at a regional and national level with multiple 
-                accolades, including bronze in the 2023 USATKD National 
-                Championships sparring -67kg division. 
-            </p>
-            <p>
-                Youngseo is primarily trained in the World Taekwondo branch,
-                with multiple years of experience in poomsae and sparring. She 
-                currently teaches youth classes at CW Taekwondo for ages 5-15, 
-                and has experience in teaching youth and adult Taekwondo 
-                classes.
-            
-            </p>
-        </div>
-        <div class = "column">
-            <img src="croppedcompsidekick.jpg" alt="The Instructor Kicking a
-             Sidekick" width=90% style="vertical-align: middle;">
-        </div>
-    </div>
-    
-   
         
-</body>
+    
+            
+    </body>
 </html>

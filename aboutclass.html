@@ -1,76 +1,84 @@
+<!--
+Youngseo Yi
+9/27/23
+CS20-Web Programming
+HW2: Build a Business Website
+Content: About the Class Page
+-->
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Taekwondo Tutoring: About the Class</title>
+        <link rel="stylesheet" href="desktopStylesheet.css">
+        <!--internal stylesheet-->
+        <style>
+            ul {
+                text-align: left;
+                max-width: 600px;
+                margin-left: 25%;
+                margin-right: 25%;
+            }  
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<head>
-    <title>Taekwondo Tutoring: About the Class</title>
-    <link rel="stylesheet" href="desktopStylesheet.css">
-
-    <style>
-        ul {
-            text-align: left;
-            max-width: 600px;
-            margin-left: 25%;
-            margin-right: 25%;
-        }  
-    </style>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-</head>
-
-<body>
-    <div class="header">
-        <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
-        <div class="tagline">Taekwondo Tutoring</div>
-        <a href = "mailto: taekwontutoryy@gmail.com">
-            taekwontutoryy@gmail.com 
-        </a>
-        <div class="phone">Phone: (781)698-7351</div>
-    </div>
-
-        
-    <div class="navigation">
-        <a href="./index.html">Home</a>
-        <div class="dropdown active">
-            <div class="dropbtn">About</div>
-            <div class="dropdown-content">
-                <a class="active" href="./aboutclass.html">About the Class</a>
-                <a href="./aboutinstructor.html">About the Instructor</a>
-            </div>
+    <body>
+        <!--header-->
+        <div class="header">
+            <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
+            <div class="tagline">Taekwondo Tutoring</div>
+            <a href = "mailto: taekwontutoryy@gmail.com">
+                taekwontutoryy@gmail.com 
+            </a>
+            <div class="phone">Phone: (781)698-7351</div>
         </div>
-        <a href="./contact.html">Contact Us</a>
-        <a href="./resources.html">Resources</a>
-    </div>
 
+        <!--navigation bar-->
+        <div class="navigation">
+            <a href="./index.html">Home</a>
+            <div class="dropdown active">
+                <div class="dropbtn">About</div>
+                <div class="dropdown-content">
+                    <a class="active" href="./aboutclass.html">
+                        About the Class</a>
+                    <a href="./aboutinstructor.html">About the Instructor</a>
+                </div>
+            </div>
+            <a href="./contact.html">Contact Us</a>
+            <a href="./resources.html">Resources</a>
+        </div>
 
-    <div class="banner">
-        <h1>About the Class</h1>
-    </div>
-    <p>Each class is a 1-2 hour online Zoom session with primary focus on the 
-        goals and objectives of the student. There are three formats that 
-        classes can take:
-    </p>
-    <ul>
-        <li><b>Structured</b>, following our online curriculum with focused 
-            training in forms and kicking techniques</li>
-        <li><b>Flexible</b>, with the student specifying areas of improvement
-            during the class to work on throughout the session</li>
-        <li><b>Dialogue</b>, with the student conversing with the instructor for 
-            coaching or advice. This class does not involve active Taekwondo 
-            training during the class, but serves as a means to help the 
-            student identify their current skills, goals, and motivations in 
-            Taekwondo. </li>
-    </ul>
-    <p> Classes are scheduled ahead of time, based on availability for the
-        student and the instructor. Cancellations must be made at least 24 hours
-        prior to the lesson. 
-    </p>
-    <p> The student is responsible for finding an adequate space to train
-        safely. A flat 3x3 meter space with no obstacles or obstructions is 
-        recommended for active Taekwondo training. Resistance bands, dumbbells,
-        or additional training tools are ideal for more advanced training, but 
-        not required.
-    </p>
-        
-</body>
+        <!--banner-->
+        <div class="banner">
+            <h1>About the Class</h1>
+        </div>
 
+        <!--content-->
+        <p>Each class is a 1-2 hour online Zoom session with primary focus on
+            the goals and objectives of the student. There are three formats
+            that classes can take:
+        </p>
+        <ul>
+            <li><b>Structured</b>, following our online curriculum with focused 
+                training in forms and kicking techniques</li>
+            <li><b>Flexible</b>, with the student specifying areas of
+                improvement during the class to work on throughout the 
+                session</li>
+            <li><b>Dialogue</b>, with the student conversing with the instructor
+                for coaching or advice. This class does not involve active 
+                Taekwondo training during the class, but serves as a means to
+                help the student identify their current skills, goals, and 
+                motivations in Taekwondo. </li>
+        </ul>
+        <p> Classes are scheduled ahead of time, based on availability for the
+            student and the instructor. Cancellations must be made at least 24
+            hours prior to the lesson. 
+        </p>
+        <p> The student is responsible for finding an adequate space to train
+            safely. A flat 3x3 meter space with no obstacles or obstructions is 
+            recommended for active Taekwondo training. Resistance bands, 
+            dumbbells, or additional training tools are ideal for more advanced
+            training, but not required.
+        </p>
+    </body>
 </html>

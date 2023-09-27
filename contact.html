@@ -1,8 +1,16 @@
+<!--
+Youngseo Yi
+9/27/23
+CS20-Web Programming
+HW2: Build a Business Website
+Content: Contact Us page (with the form)
+-->
 <!DOCTYPE html>
 <html>
     <head>
         <title>Taekwondo Tutoring: Contact</title>
         <link rel="stylesheet" href="desktopStylesheet.css">
+        <!--internal stylesheet-->
         <style>
             * {
                 box-sizing:border-box;
@@ -15,7 +23,6 @@
                 background-color: #f2f2f2;
                 padding: 20px;
             }
-
             @media screen and (max-width: 600px) {
                 .col-25, .col-75, input[type=submit] {
                     width: 100%;
@@ -25,7 +32,9 @@
         </style>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+
     <body>
+        <!--header-->
         <div class="header">
             <img src="logodark.png" alt="Taekwondo Tutoring Logo" width=10%>
             <div class="tagline">Taekwondo Tutoring</div>
@@ -34,7 +43,8 @@
             </a>
             <div class="phone">Phone: (781)698-7351</div>
         </div>
-            
+
+        <!--navigation bar-->
         <div class="navigation">
             <a href="./index.html">Home</a>
             <div class="dropdown">
@@ -48,10 +58,12 @@
             <a href="./resources.html">Resources</a>
         </div>
 
-
+        <!--banner with page name-->
         <div class="banner">
             <h1>Contact Us</h1>
         </div>
+        
+        <!--form-->
         <p>Please fill out the form below to contact us. </p>
         <div class="form">
             <form action="#" method="get">
